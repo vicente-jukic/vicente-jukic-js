@@ -78,7 +78,7 @@ var tenLettersWordsUC = tenLettersWords.substring(0,1).toUpperCase() + tenLetter
 console.log('Excercise 2.f:', tenLettersWordsUC);
 
 
-//***** 3 - Arrays *****/
+//***** 3 - Arrays *****//
 
 // a)
 
@@ -121,11 +121,13 @@ monthsMayToNov = months.reverse().slice(4,11);
 console.log('Excercise 2.f:', monthsMayToNov);
 
 
-//***** 4 - If Else *****/
+//***** 4 - If Else *****//
 
 // a)
 
 var randNumber = Math.random()
+
+console.log('Excercise 4.a:')
 
 if (randNumber > 0.5){
     console.log(randNumber, 'Greater than 0.5');
@@ -137,7 +139,7 @@ if (randNumber > 0.5){
 
 age = Math.floor(Math.random() * 101);
 
-console.log('Age: ' + age);
+console.log('Excercise 4.b:','Age: ' + age);
 
 if (age < 2){
     console.log('Bebe');
@@ -154,3 +156,44 @@ if (age < 2){
 }else{
     console.log('Anciano');
 }
+
+
+//***** 5 - For *****//
+
+// a)
+
+var myArray = ['red', 'blue', 'green', 'yellow', 'purple'];
+
+console.log('Excercise 5.a:')
+
+for (var i = 0; i < myArray.length; i++){
+    console.log(myArray[i]);
+}
+
+// b)
+
+console.log('Excercise 5.b:')
+
+for (var i = 0; i < myArray.length; i++){
+    myArray[i] = myArray[i].substring(0,1).toUpperCase() + myArray[i].substring(1);
+    console.log(myArray[i]);
+}
+
+// c)
+
+var sentence = ''
+
+for (var i = 0; i < myArray.length; i++){
+    sentence += myArray[i];
+}
+console.log('Excercise 5.c:', sentence);
+
+// d)
+
+ var emptyArray = []
+
+ for (var i = 0; i <10; i ++){
+     emptyArray[i] = i;
+ }
+
+ console.log('Excercise 5.d:', emptyArray);
