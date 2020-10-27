@@ -197,3 +197,81 @@ console.log('Excercise 5.c:', sentence);
  }
 
  console.log('Excercise 5.d:', emptyArray);
+
+
+ //***** 6 - Functions *****//
+
+// a)
+
+ function numSum(x,y){
+     return x + y;
+ }
+
+ var funcResult = numSum(4,8);
+
+ console.log('Excercise 6.a:', funcResult);
+
+// b)
+
+ function numSum2(x,y){
+     if (typeof x != 'number'){
+         console.log(x + ' is not a number');
+         return NaN;
+    }else if (typeof y != 'number'){
+        console.log(y + ' is not a number');
+        return NaN;
+    }else{
+        return x + y;
+    }
+ }
+
+// c)
+
+function validateInteger(x){
+    if (x % 1 == 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+console.log(validateInteger(3.2));
+console.log(validateInteger(3));
+
+// d)
+
+function numSumRounded(x,y){
+    if (typeof x != 'number'){
+        console.log(x + ' is not a number');
+        return NaN;
+   }else if (typeof y != 'number'){
+       console.log(y + ' is not a number');
+       return NaN;
+   }else{
+    if (x % 1 != 0){
+        console.log(x , 'will be rounded, it is not an integer');
+        return Math.round(x);
+    }else if (y % 1 != 0){
+        console.log(y , 'will be rounded, it is not an integer');
+        return Math.round(y);
+    }else{
+        return x + y;
+    }
+   }
+}
+
+console.log(numSumRounded(2.5,3))
+
+// e)
+
+function isNumber (x) {
+    if (typeof x === "number"){
+        return x;
+    }else{
+        console.log(x, 'is not a number');
+        return NaN
+    }
+}
+
+
+
