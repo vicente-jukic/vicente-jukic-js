@@ -119,3 +119,38 @@ console.log('Excercise 2.f:', months.join('-'));
 monthsMayToNov = months.reverse().slice(4,11);
 
 console.log('Excercise 2.f:', monthsMayToNov);
+
+
+//***** 4 - If Else *****/
+
+// a)
+
+var randNumber = Math.random()
+
+if (randNumber > 0.5){
+    console.log(randNumber, 'Greater than 0.5');
+}else{
+    console.log(randNumber, 'Less than 0.5');
+}
+
+// b)
+
+age = Math.floor(Math.random() * 101);
+
+console.log('Age: ' + age);
+
+if (age < 2){
+    console.log('Bebe');
+}else if (age < 12){
+    console.log('Nino');
+}else if (age < 19){
+    console.log('Adolescente');
+}else if (age < 30){
+    console.log('Joven');
+}else if (age < 60){
+    console.log('Adulto');
+}else if (age < 75){
+    console.log('Adulto Mayor');
+}else{
+    console.log('Anciano');
+}
